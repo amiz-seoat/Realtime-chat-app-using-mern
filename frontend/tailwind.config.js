@@ -1,13 +1,49 @@
-import daisyui from "daisyui"
+
+import daisyui from "daisyui";
 
 // tailwind.config.js
 module.exports = {
-    content: [
-      "./src/**/*.{js,jsx,ts,tsx}", // adjust if your project structure is different
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}", // adjust if your project structure is different
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [require("daisyui")],
+    daisyui: {
+    themes: [
+      "light",
+      "dark",
+      "cupcake",
+      "bumblebee",
+      "emerald",
+      "corporate",
+      "synthwave",
+      "retro",
+      "cyberpunk",
+      "valentine",
+      "halloween",
+      "garden",
+      "forest",
+      "aqua",
+      "lofi",
+      "pastel",
+      "fantasy",
+      "wireframe",
+      "black",
+      "luxury",
+      "dracula",
+      "cmyk",
+      "autumn",
+      "business",
+      "acid",
+      "lemonade",
+      "night",
+      "coffee",
+      "winter",
+      "dim",
+      "nord",
+      "sunset",
     ],
-    theme: {
-      extend: {},
-    },
-    plugins: [daisyui],
-    
-  }
+  },
+};
